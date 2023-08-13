@@ -16,7 +16,7 @@ const Prestation = () => {
   };
 
   return (
-    <div name='prestation' className='w-full h-screen bg-[#f1dad1] flex flex-col items-center justify-center'>
+    <div name='pre' className='w-screen h-screen bg-[#f1dad1] flex flex-col items-center justify-center'>
       <h1 className='text-4xl mt-20 sm:text-7xl font-extrabold text-black text-center'>
         Prestations
       </h1>
@@ -31,7 +31,7 @@ const Prestation = () => {
           <div className='rounded-full w-32 h-32 overflow-hidden'>
             <img src={photo1} alt="pic" className='object-cover w-full h-full' />
           </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Titre de l'image 1</h3>
+          <h3 className='mt-4 text-xl font-semibold text-black'>Manicure</h3>
           <p className='mt-2 text-base font-medium text-black'>Texte en dessous de l'image 1</p>
         </div>
 
@@ -40,7 +40,7 @@ const Prestation = () => {
           <div className='rounded-full w-32 h-32 overflow-hidden'>
             <img src={photo1} alt="pic" className='object-cover w-full h-full' />
           </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Titre de l'image 2</h3>
+          <h3 className='mt-4 text-xl font-semibold text-black'>Pedicure</h3>
           <p className='mt-2 text-base font-medium text-black'>Texte en dessous de l'image 2</p>
         </div>
 
@@ -49,7 +49,7 @@ const Prestation = () => {
           <div className='rounded-full w-32 h-32 overflow-hidden'>
             <img src={photo1} alt="pic" className='object-cover w-full h-full' />
           </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Titre de l'image 3</h3>
+          <h3 className='mt-4 text-xl font-semibold text-black'>Soin visage </h3>
           <p className='mt-2 text-base font-medium text-black'>Texte en dessous de l'image 3</p>
         </div>
       </div>
