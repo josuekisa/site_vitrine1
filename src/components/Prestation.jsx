@@ -1,612 +1,106 @@
-import React from 'react';
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-import { HiArrowNarrowRight } from 'react-icons/hi';
-import { Link } from 'react-scroll';
-import photo1 from '../assets/pedicure.jpeg';
+import Photo1 from '../assets/epilation.png'
+import Photo2 from '../assets/nail.png'
+import Photo3 from '../assets/pedicure.png'
+import Photo4 from '../assets/cils.png'
+import Photo5 from '../assets/cheveux.png'
+import Photo6 from '../assets/visage.png'
 
-const Prestation = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
-
+const Service = () => {
   return (
-    <div name='pre' className='w-screen h-screen bg-[#f1dad1] flex flex-col items-center justify-center'>
-     <h1 className='text-4xl  sm:text-7xl font-extrabold text-black text-center'>
-  Prestations
-</h1>
-      <div className='w-20 my-2 mt-8'>
-        <hr className='border-2 border-black' />
+    <section name="pre" className="w-screen h-screen flex justify-center items-center dark:bg-[#877184]">
+    <div className="container flex flex-col items-center">
+      <div className=" mb-12 max-w-[510px] text-center">
+        <span className="block mb-2 text-lg font-semibold text-primary">
+          Nos Services
+        </span>
+        <h2 className="mb-4 text-3xl font-bold text-dark sm:text-4xl md:text-[40px]">
+          Prestation
+        </h2>
+        <p className="text-base text-body-color">
+         Nous proposons plusieurs prestation dans notre salon.
+         Voici quelque unes de nos prestations.
+        </p>
       </div>
-
-      <p className='mt-2 text-base font-medium text-black' style={{
-  fontFamily: 'Poppins',
-  fontSize: '18px',
-  fontWeight: 300,
-  lineHeight: '30.6px',
-  textAlign: 'center',
-  color: 'rgb(0, 0, 0)',
-  margin: '0px 0px 20px',
-  padding: '0px',
-  maxHeight: 'none',
-  minHeight: '0px',
-  maxWidth: 'none',
-  minWidth: '0px',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'block',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-  Nous vous invitons à prendre soin de votre corps, à vous ressourcer, à vous détacher du quotidien grâce à nos prestations qui prendront soin de votre peau.
-</p>
-  
-
-      {/* Ensembles alignés horizontalement avec espace */}
-      <div id='case1' className='flex justify-center space-x-20 mt-32' style={{
-  fontFamily: 'EB Garamond',
-  fontSize: '17px',
-  fontStyle: 'normal',
-  fontVariant: 'normal',
-  fontWeight: 400,
-  letterSpacing: 'normal',
-  lineHeight: '25.5px',
-  textDecoration: 'none solid rgb(0, 0, 0)',
-  textAlign: 'start',
-  textIndent: '0px',
-  textTransform: 'none',
-  verticalAlign: 'baseline',
-  whiteSpace: 'normal',
-  wordSpacing: '0px',
-  backgroundAttachment: 'scroll',
-  backgroundColor: 'rgba(0, 0, 0, 0)',
-  backgroundImage: 'none',
-  backgroundPosition: '0% 0%',
-  backgroundRepeat: 'no-repeat',
-  color: 'rgb(0, 0, 0)',
-  height: '559.094px',
-  width: '351.656px',
-  border: '0px none rgb(0, 0, 0)',
-  borderTop: '0px none rgb(0, 0, 0)',
-  borderRight: '0px none rgb(0, 0, 0)',
-  borderBottom: '0px none rgb(0, 0, 0)',
-  borderLeft: '0px none rgb(0, 0, 0)',
-  margin: '0px 15px 0px 0px',
-  padding: '20px',
-  maxHeight: 'none',
-  minHeight: '1px',
-  maxWidth: 'none',
-  minWidth: 'auto',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'flex',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  outline: 'rgb(255, 0, 0) dashed 1px',
-  outlineOffset: '0px',
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-        {/*epilation */}
-        <div className='flex flex-col items-center'>
-          <div className='rounded-full w-32 h-32 overflow-hidden'>
-            <img src={photo1} alt="pic" className='object-cover w-full h-full' />
-          </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Epilation</h3>
-          <p className='mt-2 text-base font-medium text-black' style={{
-  fontFamily: 'EB Garamond',
-  fontSize: '17px',
-  fontStyle: 'normal',
-  fontVariant: 'normal',
-  fontWeight: 400,
-  letterSpacing: 'normal',
-  lineHeight: '25.5px',
-  textDecoration: 'none solid rgb(0, 0, 0)',
-  textAlign: 'justify',
-  textIndent: '0px',
-  textTransform: 'none',
-  verticalAlign: 'baseline',
-  whiteSpace: 'normal',
-  wordSpacing: '0px',
-  backgroundAttachment: 'scroll',
-  backgroundColor: 'rgba(0, 0, 0, 0)',
-  backgroundImage: 'none',
-  backgroundPosition: '0% 0%',
-  backgroundRepeat: 'repeat',
-  color: 'rgb(0, 0, 0)',
-  height: '127.5px',
-  width: '311.656px',
-  border: '0px none rgb(0, 0, 0)',
-  borderTop: '0px none rgb(0, 0, 0)',
-  borderRight: '0px none rgb(0, 0, 0)',
-  borderBottom: '0px none rgb(0, 0, 0)',
-  borderLeft: '0px none rgb(0, 0, 0)',
-  margin: '20px 0px 20px',
-  padding: '0px',
-  maxHeight: 'none',
-  minHeight: '0px',
-  maxWidth: 'none',
-  minWidth: '0px',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'block',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-  Nous vous invitons à prendre soin de votre corps, à vous ressourcer, à vous détacher du quotidien grâce à nos prestations qui prendront soin de votre peau.
-</p>
-        </div>
-
-        {/* Soin des main */}
-        <div className='flex flex-col items-center'>
-          <div className='rounded-full w-32 h-32 overflow-hidden'>
-            <img src={photo1} alt="pic" className='object-cover w-full h-full' />
-          </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Soin des main</h3>
-          <p className='mt-2 text-base font-medium text-black' style={{
-  fontFamily: 'EB Garamond',
-  fontSize: '17px',
-  fontStyle: 'normal',
-  fontVariant: 'normal',
-  fontWeight: 400,
-  letterSpacing: 'normal',
-  lineHeight: '25.5px',
-  textDecoration: 'none solid rgb(0, 0, 0)',
-  textAlign: 'justify',
-  textIndent: '0px',
-  textTransform: 'none',
-  verticalAlign: 'baseline',
-  whiteSpace: 'normal',
-  wordSpacing: '0px',
-  backgroundAttachment: 'scroll',
-  backgroundColor: 'rgba(0, 0, 0, 0)',
-  backgroundImage: 'none',
-  backgroundPosition: '0% 0%',
-  backgroundRepeat: 'repeat',
-  color: 'rgb(0, 0, 0)',
-  height: '127.5px',
-  width: '311.656px',
-  border: '0px none rgb(0, 0, 0)',
-  borderTop: '0px none rgb(0, 0, 0)',
-  borderRight: '0px none rgb(0, 0, 0)',
-  borderBottom: '0px none rgb(0, 0, 0)',
-  borderLeft: '0px none rgb(0, 0, 0)',
-  margin: '20px 0px 20px',
-  padding: '0px',
-  maxHeight: 'none',
-  minHeight: '0px',
-  maxWidth: 'none',
-  minWidth: '0px',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'block',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-  Nous vous invitons à prendre soin de votre corps, à vous ressourcer, à vous détacher du quotidien grâce à nos prestations qui prendront soin de votre peau.
-</p>
-        </div>
-
-        {/* soin des pied */}
-        <div className='flex flex-col items-center'>
-          <div className='rounded-full w-32 h-32 overflow-hidden'>
-            <img src={photo1} alt="pic" className='object-cover w-full h-full' />
-          </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Soin des pied </h3>
-          <p className='mt-2 text-base font-medium text-black' style={{
-  fontFamily: 'EB Garamond',
-  fontSize: '17px',
-  fontStyle: 'normal',
-  fontVariant: 'normal',
-  fontWeight: 400,
-  letterSpacing: 'normal',
-  lineHeight: '25.5px',
-  textDecoration: 'none solid rgb(0, 0, 0)',
-  textAlign: 'justify',
-  textIndent: '0px',
-  textTransform: 'none',
-  verticalAlign: 'baseline',
-  whiteSpace: 'normal',
-  wordSpacing: '0px',
-  backgroundAttachment: 'scroll',
-  backgroundColor: 'rgba(0, 0, 0, 0)',
-  backgroundImage: 'none',
-  backgroundPosition: '0% 0%',
-  backgroundRepeat: 'repeat',
-  color: 'rgb(0, 0, 0)',
-  height: '127.5px',
-  width: '311.656px',
-  border: '0px none rgb(0, 0, 0)',
-  borderTop: '0px none rgb(0, 0, 0)',
-  borderRight: '0px none rgb(0, 0, 0)',
-  borderBottom: '0px none rgb(0, 0, 0)',
-  borderLeft: '0px none rgb(0, 0, 0)',
-  margin: '20px 0px 20px',
-  padding: '0px',
-  maxHeight: 'none',
-  minHeight: '0px',
-  maxWidth: 'none',
-  minWidth: '0px',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'block',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-  Nous vous invitons à prendre soin de votre corps, à vous ressourcer, à vous détacher du quotidien grâce à nos prestations qui prendront soin de votre peau.
-</p>
-        </div>
-          {/* Extension cil */}
-          <div className='flex flex-col items-center'>
-          <div className='rounded-full w-32 h-32 overflow-hidden'>
-            <img src={photo1} alt="pic" className='object-cover w-full h-full' />
-          </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Extension cil </h3>
-          <p className='mt-2 text-base font-medium text-black' style={{
-  fontFamily: 'EB Garamond',
-  fontSize: '17px',
-  fontStyle: 'normal',
-  fontVariant: 'normal',
-  fontWeight: 400,
-  letterSpacing: 'normal',
-  lineHeight: '25.5px',
-  textDecoration: 'none solid rgb(0, 0, 0)',
-  textAlign: 'justify',
-  textIndent: '0px',
-  textTransform: 'none',
-  verticalAlign: 'baseline',
-  whiteSpace: 'normal',
-  wordSpacing: '0px',
-  backgroundAttachment: 'scroll',
-  backgroundColor: 'rgba(0, 0, 0, 0)',
-  backgroundImage: 'none',
-  backgroundPosition: '0% 0%',
-  backgroundRepeat: 'repeat',
-  color: 'rgb(0, 0, 0)',
-  height: '127.5px',
-  width: '311.656px',
-  border: '0px none rgb(0, 0, 0)',
-  borderTop: '0px none rgb(0, 0, 0)',
-  borderRight: '0px none rgb(0, 0, 0)',
-  borderBottom: '0px none rgb(0, 0, 0)',
-  borderLeft: '0px none rgb(0, 0, 0)',
-  margin: '20px 0px 20px',
-  padding: '0px',
-  maxHeight: 'none',
-  minHeight: '0px',
-  maxWidth: 'none',
-  minWidth: '0px',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'block',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-  Nous vous invitons à prendre soin de votre corps, à vous ressourcer, à vous détacher du quotidien grâce à nos prestations qui prendront soin de votre peau.
-</p>
-        </div>
-            {/* Extension cheveux */}
-            <div className='flex flex-col items-center'>
-          <div className='rounded-full w-32 h-32 overflow-hidden'>
-            <img src={photo1} alt="pic" className='object-cover w-full h-full' />
-          </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>Extension cheveux </h3>
-          <p className='mt-2 text-base font-medium text-black' style={{
-  fontFamily: 'EB Garamond',
-  fontSize: '17px',
-  fontStyle: 'normal',
-  fontVariant: 'normal',
-  fontWeight: 400,
-  letterSpacing: 'normal',
-  lineHeight: '25.5px',
-  textDecoration: 'none solid rgb(0, 0, 0)',
-  textAlign: 'justify',
-  textIndent: '0px',
-  textTransform: 'none',
-  verticalAlign: 'baseline',
-  whiteSpace: 'normal',
-  wordSpacing: '0px',
-  backgroundAttachment: 'scroll',
-  backgroundColor: 'rgba(0, 0, 0, 0)',
-  backgroundImage: 'none',
-  backgroundPosition: '0% 0%',
-  backgroundRepeat: 'repeat',
-  color: 'rgb(0, 0, 0)',
-  height: '127.5px',
-  width: '311.656px',
-  border: '0px none rgb(0, 0, 0)',
-  borderTop: '0px none rgb(0, 0, 0)',
-  borderRight: '0px none rgb(0, 0, 0)',
-  borderBottom: '0px none rgb(0, 0, 0)',
-  borderLeft: '0px none rgb(0, 0, 0)',
-  margin: '20px 0px 20px',
-  padding: '0px',
-  maxHeight: 'none',
-  minHeight: '0px',
-  maxWidth: 'none',
-  minWidth: '0px',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'block',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-  Nous vous invitons à prendre soin de votre corps, à vous ressourcer, à vous détacher du quotidien grâce à nos prestations qui prendront soin de votre peau.
-</p>
-        </div>
-            {/* soin visage corps */}
-            <div className='flex flex-col items-center'>
-          <div className='rounded-full w-32 h-32 overflow-hidden'>
-            <img src={photo1} alt="pic" className='object-cover w-full h-full' />
-          </div>
-          <h3 className='mt-4 text-xl font-semibold text-black'>soin visage & corps </h3>
-         
-<p className='mt-2 text-base font-medium text-black' style={{
-  fontFamily: 'EB Garamond',
-  fontSize: '17px',
-  fontStyle: 'normal',
-  fontVariant: 'normal',
-  fontWeight: 400,
-  letterSpacing: 'normal',
-  lineHeight: '25.5px',
-  textDecoration: 'none solid rgb(0, 0, 0)',
-  textAlign: 'justify',
-  textIndent: '0px',
-  textTransform: 'none',
-  verticalAlign: 'baseline',
-  whiteSpace: 'normal',
-  wordSpacing: '0px',
-  backgroundAttachment: 'scroll',
-  backgroundColor: 'rgba(0, 0, 0, 0)',
-  backgroundImage: 'none',
-  backgroundPosition: '0% 0%',
-  backgroundRepeat: 'repeat',
-  color: 'rgb(0, 0, 0)',
-  height: '127.5px',
-  width: '311.656px',
-  border: '0px none rgb(0, 0, 0)',
-  borderTop: '0px none rgb(0, 0, 0)',
-  borderRight: '0px none rgb(0, 0, 0)',
-  borderBottom: '0px none rgb(0, 0, 0)',
-  borderLeft: '0px none rgb(0, 0, 0)',
-  margin: '20px 0px 20px',
-  padding: '0px',
-  maxHeight: 'none',
-  minHeight: '0px',
-  maxWidth: 'none',
-  minWidth: '0px',
-  position: 'static',
-  top: 'auto',
-  bottom: 'auto',
-  right: 'auto',
-  left: 'auto',
-  float: 'none',
-  display: 'block',
-  clear: 'none',
-  zIndex: 'auto',
-  listStyleImage: 'none',
-  listStyleType: 'disc',
-  listStylePosition: 'outside',
-  borderCollapse: 'separate',
-  borderSpacing: '0px 0px',
-  captionSide: 'top',
-  emptyCells: 'show',
-  tableLayout: 'auto',
-  overflow: 'visible',
-  cursor: 'auto',
-  visibility: 'visible',
-  transform: 'none',
-  transition: 'all 0s ease 0s',
-  boxSizing: 'border-box',
-  resize: 'none',
-  textShadow: 'none',
-  textOverflow: 'clip',
-  wordWrap: 'normal',
-  boxShadow: 'none',
-  borderTopLeftRadius: '0px',
-  borderTopRightRadius: '0px',
-  borderBottomLeftRadius: '0px',
-  borderBottomRightRadius: '0px'
-}}>
-  Nous vous invitons à prendre soin de votre corps, à vous ressourcer, à vous détacher du quotidien grâce à nos prestations qui prendront soin de votre peau.
-</p>
-        </div>
-      </div>
+      <div className="flex flex-wrap -mx-4 justify-center">
+      <ServiceCard
+  title="Epilation"
+  details="Nous aimons travailler avec des clients exigeants, des personnes pour qui la qualité, le service, l'intégrité et l'esthétique sont importants."
+  icon={
+    <div className="flex justify-center">
+      <img className="w-full h-auto object-cover rounded-t-lg" src={Photo1} alt="Basé sur Tailwind CSS" />
     </div>
+  }
+/>
+    
+    <ServiceCard
+            title="Soins des mains"
+            details="Nous aimons travailler avec des clients exigeants, des personnes pour qui la qualité, le service, l'intégrité et l'esthétique sont importants."
+            icon={
+              <div className="flex justify-center">
+                <img className="w-full h-auto object-cover rounded-t-lg" src={Photo2} alt="Basé sur Tailwind CSS" />
+              </div>
+            }
+            
+          />
+
+
+          <ServiceCard
+            title="Soins des pieds"
+            details="Nous aimons travailler avec des clients exigeants, des personnes pour qui la qualité, le service, l'intégrité et l'esthétique sont importants."
+            icon={
+              <div className="flex justify-center">
+                <img className="w-full h-auto object-cover rounded-t-lg" src={Photo3} alt="Basé sur Tailwind CSS" />
+              </div>
+            }
+          />
+          <ServiceCard
+            title="Extension cils"
+            details="Nous aimons travailler avec des clients exigeants, des personnes pour qui la qualité, le service, l'intégrité et l'esthétique sont importants."
+            icon={
+              <div className="flex justify-center">
+                <img className="w-full h-auto object-cover rounded-t-lg" src={Photo4} alt="Basé sur Tailwind CSS" />
+              </div>
+            }
+          />
+          <ServiceCard
+            title="Extension cheveux"
+            details="Nous aimons travailler avec des clients exigeants, des personnes pour qui la qualité, le service, l'intégrité et l'esthétique sont importants."
+            icon={
+              <div className="flex justify-center">
+                <img className="w-full h-auto object-cover rounded-t-lg" src={Photo5} alt="Basé sur Tailwind CSS" />
+              </div>
+            }
+          /> 
+            <ServiceCard
+            title="soin visage"
+            details="Nous aimons travailler avec des clients exigeants, des personnes pour qui la qualité, le service, l'intégrité et l'esthétique sont importants."
+            icon={
+              <div className="flex justify-center">
+                <img className="w-full h-auto object-cover rounded-t-lg" src={Photo6} alt="Basé sur Tailwind CSS" />
+              </div>
+            }
+          /> 
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default Prestation;
+export default Service;
+const ServiceCard = ({ icon, title, details }) => {
+  return (
+    <>
+      <div className="w-full px-4 md:w-1/2 lg:w-1/3">
+        <div className="mb-8 rounded-[20px] bg-white p-10 shadow-md hover:shadow-lg md:px-7 xl:px-10">
+          <div
+            className={`mb-8 ml-[-62px] flex h-[70px] w-[200px] p-3 items-center justify-center rounded-2xl bg-primary`}
+          >
+            {icon}
+          </div>
+          <h4 className="mb-3 text-xl font-semibold text-dark">{title}</h4>
+          <p className="text-body-color">{details}</p>
+        </div>
+      </div>
+    </>
+  );
+};
